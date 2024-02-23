@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cursoRoutes = require('./routes/cursoRoutes');
 const clasesParticulares = require("./routes/claseParticularRoutes")
+const alumnosInscriptos = require("./routes/alumnoInscriptoRoutes")
 require('dotenv').config();
 
 
@@ -25,6 +26,8 @@ app.use(express.json());
 
 app.use("/api/cursos",cursoRoutes)
 app.use("/api/clasesParticulares",clasesParticulares)
+app.use("/api/alumnosInscriptos", alumnosInscriptos)
+
 
 app.listen(PORT, () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}`);
