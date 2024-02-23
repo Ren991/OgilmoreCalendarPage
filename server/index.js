@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const cursoRoutes = require('./routes/cursoRoutes');
 const clasesParticulares = require("./routes/claseParticularRoutes")
 const alumnosInscriptos = require("./routes/alumnoInscriptoRoutes")
+const usuarios = require("./routes/usuarioRoutes")
+
 require('dotenv').config();
 
 
@@ -24,11 +26,14 @@ db.once('open', () => {
 
 app.use(express.json());
 
-app.use("/api/cursos",cursoRoutes)
-app.use("/api/clasesParticulares",clasesParticulares)
-app.use("/api/alumnosInscriptos", alumnosInscriptos)
+app.use("/api/cursos",cursoRoutes);
+app.use("/api/clasesParticulares",clasesParticulares);
+app.use("/api/alumnosInscriptos", alumnosInscriptos);
+app.use("/api/usuarios", usuarios);
 
 
 app.listen(PORT, () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}`);
 });
+
+
