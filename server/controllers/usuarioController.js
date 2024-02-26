@@ -24,7 +24,7 @@ exports.obtenerUsuarios = async (req, res) => {
 exports.actualizarUsuario = async (req, res) => {
   try {
     const usuario = await Usuario.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    res.status(200).json(usuario);
+    res.status(200).json({ message: 'Usuario actualizado correctamente', usuario });
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
