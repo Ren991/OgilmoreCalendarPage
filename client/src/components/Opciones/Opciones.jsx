@@ -1,12 +1,14 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import individual from '../../assets/individual.png';
+import group from '../../assets/group.png';
 
 export default function Opciones() {
     return (
         <div className="opcionesGeneralDiv">
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={individual} />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
@@ -17,7 +19,7 @@ export default function Opciones() {
             </Card>
 
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={group} />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
