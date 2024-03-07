@@ -19,6 +19,7 @@ export default function Cursos(/* {allCursos} */){/* <div>
     return (
         
         <div className="Form">
+            <h2>¡Envianos tu inscripción!</h2>
         <FormCurso/>
         </div>
     )

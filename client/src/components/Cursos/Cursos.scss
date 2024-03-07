@@ -6,9 +6,23 @@ $Yellow: #F2E205;
 
 $font: "Quicksand", sans-serif;
 
-.Form{
+.Form {
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
     background-color: $Blue;
+    align-items: center;
+
+    h2 {
+        color: white;
+        font-family: $font;
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .FormCurso {
+        justify-self: center;
+        align-self: center;
+    }
 }
