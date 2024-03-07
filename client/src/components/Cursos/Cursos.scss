@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+$Blue: #1F165B;
+$Red: #D91E1E;
+$Yellow: #F2E205;
+
+$font: "Quicksand", sans-serif;
+
+.Form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: $Blue;
+}
