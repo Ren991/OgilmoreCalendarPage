@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema; 
 
 const claseParticularSchema = new Schema({
-  /* alumnos: [{
-    type: Schema.Types.ObjectId,
+   alumnos: [{ 
+    type: Schema.ObjectId,
     ref: 'Alumno',
     maxCount: 2 // Máximo 2 alumnos
 
-  }], propiedad comentada para que no tire error*/
+  }], /*propiedad comentada para que no tire error*/
   /* profesor: {
     type: Schema.Types.ObjectId,
     ref: 'Usuario' // Referencia al modelo de Usuario

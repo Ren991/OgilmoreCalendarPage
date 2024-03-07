@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const ClaseParticular = mongoose.model('ClaseParticular');
 
 const alumnoInscriptoSchema = new Schema({
   nombre: {
@@ -26,7 +27,7 @@ const alumnoInscriptoSchema = new Schema({
     type: Date
   },
   claseIndividual: {
-    type: Schema.Types.ObjectId,
+    type: Schema.ObjectId,
     ref: 'ClaseParticular', // Referencia al modelo de ClaseParticular
     required: false
 },

@@ -1,9 +1,18 @@
 const ClaseParticular = require('../models/ClaseParticular');
+const AlumnoInscripto = require('../models/AlumnoInscripto');
 
 //CREAR CLASE
 exports.crearClaseParticular = async (req, res) => {
   try {
     const claseParticular = await ClaseParticular.create(req.body);
+    let id = claseParticular.id;
+    for(let i=0; i<claseParticular.alumnos.length; i++){
+      let alumno = claseParticular.alumnos[i]
+     //console.log(alumno);
+      /* */await AlumnoInscripto.findByIdAndUpdate(alumno, {
+        claseIndividual : id
+      }) 
+    }
     res.status(201).json(claseParticular);
   } catch (error) {
     res.status(400).json({ message: error.message });
