@@ -7,7 +7,7 @@ function HomeNav() {
   return (
     <Nav variant="pills" activeKey="1" onSelect={handleSelect}>
       <Nav.Item>
-        <Nav.Link eventKey="1" href="#/home">
+        <Nav.Link eventKey="1" href="/home">
           Home
         </Nav.Link>
       </Nav.Item>

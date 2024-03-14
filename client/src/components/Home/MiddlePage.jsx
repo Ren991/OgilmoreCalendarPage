@@ -2,8 +2,11 @@
 import React from 'react';
 import students from "../../assets/students.jpg"
 import right from "../../assets/right.gif"
+import  "./middlePage.css"
+import { Link } from 'react-router-dom';
 
 function MiddlePage() {
+
   return (
     <div className="middle-page" style={{backgroundColor: '#1A2F44'}}>
       <div className="container">
@@ -16,12 +19,12 @@ function MiddlePage() {
             <h2 className="text-white mt-4">Comunícate en inglés</h2>
             <h1 className="text-uppercase text-white">100% ONLINE</h1>
             <h3 className="font-weight-bold text-white">¡Inscríbete YA!</h3>
+            <Link to="/InscripcionesHome" >
+              <button className="button-35" role="button" style={{width:"250px"}} >Inscripciones !!</button>
+
+            </Link>
             
             
-            <div className="red-bar d-flex justify-content-center align-items-center py-3 mt-4" style={{height:"50px"}}>
-              <button className="btn btn-primary " style={{backgroundColor: '#D91E1E', marginRight: '10px'}}>Cursos grupales</button>
-              <button className="btn btn-primary" style={{backgroundColor: '#D91E1E',marginLeft: '10px'}}>Clases individuales</button>
-            </div>
             <hr style={{borderColor: 'white'}} />
             <div className="box-container mt-4" style={{ margin: '0 auto', background: 'rgb(142,142,149)',
                 background: 'linear-gradient(90deg, rgba(142,142,149,1) 0%, rgba(255,255,255,1) 59%, rgba(237,237,237,1) 100%)',borderRadius:"0.5rem"}}>
