@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import individual from '../../assets/individual.png';
 import group from '../../assets/group.png';
 import './Opciones.scss';
+import { Link } from "react-router-dom";
 
 export default function Opciones() {
     return (
@@ -17,7 +18,7 @@ export default function Opciones() {
                     <Card.Text>
                         Explora nuevas fronteras con nuestros cursos de inglés
                     </Card.Text>
-                    <Button variant="primary" href="/Cursos">Inscribirme</Button>
+                    <Button variant="primary" href="/formularioCursos">Inscribirme</Button>
                 </Card.Body>
             </Card>
 
@@ -28,7 +29,9 @@ export default function Opciones() {
                     <Card.Text>
                         Avanza a tu propio ritmo con nuestras clases personalizadas.
                     </Card.Text>
-                    <Button variant="primary" href="/ClasesPersonalizadas">Inscribirme</Button>
+                    <Link to="/clasesPerzonalizadas">
+                    <Button variant="primary" >Inscribirme</Button>
+                    </Link>
                 </Card.Body>
             </Card>
             </div>

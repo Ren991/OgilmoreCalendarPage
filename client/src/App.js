@@ -4,6 +4,9 @@ import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Opciones from "./components/Opciones/Opciones";
 import Cursos from "./components/Cursos/Cursos";
+import FormClases from "./components/ClasesIndividuales/FormClases";
+import Calendario from "./components/ClasesIndividuales/Calendario"
+
 
 function App() {
   return (
@@ -12,7 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="/InscripcionesHome" element={<Opciones />}/>
-        <Route path="/Cursos" element={<Cursos/>}/> 
+        <Route path="/formularioCursos" element={<Cursos/>}/> {/* => FORMULARIO CURSO */}
+        <Route path="/formularioClases" element={<FormClases/>}/> {/* => FORMULARIO CLASES */}
+        <Route path="/ClasesPerzonalizadas" element={<Calendario/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
